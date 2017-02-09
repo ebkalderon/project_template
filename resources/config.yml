@@ -1,10 +1,8 @@
----
-logging:
-    file_path: "new_project.log"
-    output_verbosity: medium
-    logging_verbosity: debug 
-
-display:
-    brightness: 1.0
-    fullscreen: false
-    resolution: [1024, 768]
+dimensions: null
+fullscreen: false
+max_dimensions: null
+min_dimensions: null
+multisampling: 1
+title: "{{ name }}"
+visibility: true
+vsync: true

@@ -1,2 +1,2 @@
-# New Amethyst Game
+# {{ name }}
 An awesome game, created with the Amethyst Game Engine.
