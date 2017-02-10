@@ -1,9 +1,9 @@
 extern crate amethyst;
 
-use amethyst::engine::{Application, State, Trans};
-use amethyst::specs::World;
-use amethyst::gfx_device::DisplayConfig;
+use amethyst::{Application, State, Trans};
 use amethyst::asset_manager::AssetManager;
+use amethyst::ecs::World;
+use amethyst::gfx_device::DisplayConfig;
 use amethyst::renderer::Pipeline;
 
 struct HelloWorld;
@@ -24,7 +24,7 @@ impl State for HelloWorld {
 }
 
 fn main() {
-    let display_config = DisplayConfig::default();
-    let mut game = Application::build(HelloWorld, display_config).done();
+    let config = DisplayConfig::default();
+    let mut game = Application::build(HelloWorld, config).done();
     game.run();
 }
